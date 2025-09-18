@@ -27,8 +27,8 @@ export default function LandingPage() {
     'Kontakt': 'Contact',
     
     // Hero Section
-    'SKALUJEMY FIRMY ONLINE': 'WE SCALE COMPANIES ONLINE',
-    'Strategie marketingowe, które docierają do ludzi, przynoszą konkretne efekty i pomagają skalować twoją firmę.': 'Marketing strategies that reach people, deliver concrete results and help scale your business.',
+    'WYSKALUJEMY TWOJĄ FIRMĘ': 'WE\'LL SCALE YOUR BRAND',
+    'Pełny kalendarz. Więcej klientów. Więcej pieniędzy. Wszystko to w ciągu miesiąca od rozpoczęcia naszej współpracy.': 'A full calendar. More clients. More money. All this within a month of starting our partnership.',
     
     // Apply Section
     'ZAAPLIKUJ TERAZ': 'APPLY NOW',
@@ -824,10 +824,10 @@ export default function LandingPage() {
             {/* Left side - Text content */}
             <div className="flex-1 text-left w-full lg:w-auto">
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white font-ascender tracking-normal mb-6 md:mb-8 leading-tight">
-                {translateText('SKALUJEMY FIRMY ONLINE')}
+                {translateText('WYSKALUJEMY TWOJĄ FIRMĘ')}
               </h1>
               <p className="text-lg md:text-xl text-white/80 font-inter mb-6 md:mb-8 leading-relaxed">
-                {translateText('Strategie marketingowe, które docierają do ludzi, przynoszą konkretne efekty i pomagają skalować twoją firmę.')}
+                {translateText('Pełny kalendarz. Więcej klientów. Więcej pieniędzy. Wszystko to w ciągu miesiąca od rozpoczęcia naszej współpracy.')}
               </p>
             </div>
             
