@@ -823,12 +823,14 @@ export default function LandingPage() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-16 md:gap-20 lg:gap-24 mb-20 md:mb-24">
             {/* Left side - Text content */}
             <div className="flex-1 text-center lg:text-left w-full lg:w-auto max-w-2xl lg:max-w-none">
-              <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white font-ascender tracking-tight mb-10 md:mb-12 leading-[0.85] hero-title hero-text">
-                {translateText('WYSKALUJEMY TWOJĄ FIRMĘ')}
-              </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-inter mb-10 md:mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0 hero-description">
-                {translateText('Pełny kalendarz. Więcej klientów. Więcej pieniędzy. Wszystko to w ciągu miesiąca od rozpoczęcia naszej współpracy.')}
-              </p>
+              <div className="hero-text-container rounded-2xl p-6 md:p-8 lg:p-10">
+                <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white font-ascender tracking-tight mb-10 md:mb-12 leading-[0.85] hero-title hero-text">
+                  {translateText('WYSKALUJEMY TWOJĄ FIRMĘ')}
+                </h1>
+                <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-inter mb-10 md:mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0 hero-description">
+                  {translateText('Pełny kalendarz. Więcej klientów. Więcej pieniędzy. Wszystko to w ciągu miesiąca od rozpoczęcia naszej współpracy.')}
+                </p>
+              </div>
             </div>
             
             {/* Right side - Images */}
