@@ -523,6 +523,8 @@
   background-clip: text;
   animation: hero-glow 6s ease-in-out infinite;
   text-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+  letter-spacing: -0.02em;
+  font-weight: 800;
 }
 
 @keyframes hero-glow {
