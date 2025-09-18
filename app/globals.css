@@ -506,12 +506,34 @@
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #ffffff, #cccccc, #ffffff);
-  background-size: 200% 200%;
+  background: linear-gradient(135deg, #ffffff, #e0e0e0, #ffffff, #f0f0f0);
+  background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: metallic-shine 3s ease-in-out infinite;
+  animation: metallic-shine 4s ease-in-out infinite;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.hero-title {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 25%, #ffffff 50%, #f0f0f0 75%, #ffffff 100%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: hero-glow 6s ease-in-out infinite;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+}
+
+@keyframes hero-glow {
+  0%, 100% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+  }
+  50% {
+    background-position: 100% 50%;
+    text-shadow: 0 0 60px rgba(255, 255, 255, 0.25);
+  }
 }
 
 /* Typing animation */
@@ -541,6 +563,48 @@
 /* Smooth transitions */
 .smooth-transition {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hero section enhancements */
+.hero-text {
+  animation: text-reveal 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.hero-description {
+  animation: text-reveal 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.hero-images {
+  animation: fade-in 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+/* Enhanced glassmorphism for hero images */
+.hero-image-container {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-image-container:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  transform: translateY(-8px) scale(1.02);
 }
 
 /* Metallic buttons */

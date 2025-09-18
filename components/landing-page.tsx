@@ -818,33 +818,33 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <div id="hero-section" className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-6 pt-20 md:pt-32">
-        <div className="text-center max-w-6xl w-full">
-          {/* Hero content - Layout like the image */}
-          <div className="flex flex-col lg:flex-row items-start gap-8 md:gap-12 mb-12 md:mb-16">
+        <div className="max-w-7xl w-full">
+          {/* Hero content - Centered and symmetrical layout */}
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-16 md:gap-20 lg:gap-24 mb-20 md:mb-24">
             {/* Left side - Text content */}
-            <div className="flex-1 text-left w-full lg:w-auto">
-              <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white font-ascender tracking-normal mb-6 md:mb-8 leading-tight">
+            <div className="flex-1 text-center lg:text-left w-full lg:w-auto max-w-2xl lg:max-w-none">
+              <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white font-ascender tracking-tight mb-10 md:mb-12 leading-[0.85] hero-title hero-text">
                 {translateText('WYSKALUJEMY TWOJĄ FIRMĘ')}
               </h1>
-              <p className="text-lg md:text-xl text-white/80 font-inter mb-6 md:mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-inter mb-10 md:mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0 hero-description">
                 {translateText('Pełny kalendarz. Więcej klientów. Więcej pieniędzy. Wszystko to w ciągu miesiąca od rozpoczęcia naszej współpracy.')}
               </p>
             </div>
             
             {/* Right side - Images */}
-            <div className="flex-1 flex flex-col sm:flex-row lg:flex-row gap-4 md:gap-6 justify-center lg:justify-end w-full lg:w-auto">
-              <div className="glassmorphism-button rounded-2xl p-3 md:p-4 w-full max-w-[300px] h-[300px] sm:max-w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] flex items-center justify-center mx-auto lg:mx-0">
+            <div className="flex-1 flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-8 md:gap-10 justify-center lg:justify-end w-full lg:w-auto hero-images">
+              <div className="hero-image-container rounded-3xl p-5 md:p-6 w-full max-w-[300px] h-[300px] sm:max-w-[340px] sm:h-[340px] lg:w-[380px] lg:h-[380px] xl:w-[420px] xl:h-[420px] flex items-center justify-center mx-auto lg:mx-0">
                 <img 
                   src="/kampania.png" 
                   alt="Kampanie Reklamowe" 
-                  className="w-full h-full object-contain rounded-xl"
+                  className="w-full h-full object-contain rounded-2xl"
                 />
               </div>
-              <div className="glassmorphism-button rounded-2xl p-3 md:p-4 w-full max-w-[300px] h-[300px] sm:max-w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px] flex items-center justify-center mx-auto lg:mx-0">
+              <div className="hero-image-container rounded-3xl p-5 md:p-6 w-full max-w-[300px] h-[300px] sm:max-w-[340px] sm:h-[340px] lg:w-[380px] lg:h-[380px] xl:w-[420px] xl:h-[420px] flex items-center justify-center mx-auto lg:mx-0">
                 <img 
                   src="/stat.png" 
                   alt="Statystyki" 
-                  className="w-full h-full object-contain rounded-xl"
+                  className="w-full h-full object-contain rounded-2xl"
                 />
               </div>
             </div>
